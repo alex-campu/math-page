@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Geometric Figures</h1>
+    </header>
+<section class="card">
+    <h2 class="card_title">Area and perimeter of a square</h2>
+    <form class="card_form" action="">
+        <label for="sqrInput">Square size</label>
+        <br>
+        <input id="sqrInput" type="number"/>
+       <br>
+        <button type="button" onclick="sqrPerimeter()">
+            Obtain perimeter
+        </button>
+        <p id="sqr-perimeter"></p>   
+        <!-- <br> -->
+        <button type="button" onclick="sqrArea()">
+            Obtain area
+        </button>
+        <p id="sqr-area"></p>   
+    </form>
+</section>
+
+<section class="card">
+    <h2 class="card_title">Area and perimeter of a triangle</h2>
+    <form class="card_form" action="">
+        <label for="trBase">Trangule base</label>
+   <br>     <input id="trBase" type="number"/>
+   <br>     <label for="trSide1">Side 1</label>
+   <br>     <input id="trSide1" type="number"/>
+   <br>     <label for="trSide2">Side 2</label>
+   <br>     <input id="trSide2" type="number"/>
+   <br>     <label for="trHeight">Triangle height</label>
+   <br>     <input id="trHeight" type="number"/>
+   <br>     <button type="button" onclick="trPerimeter()">
+            Obtain perimeter
+        </button>
+        <p id="tr-perimeter"></p>
+  <button type="button" onclick="trArea()">
+            Obtain area
+        </button>
+        <p id="tr-area"></p>
+       <button type="button" onclick="trIso()">
+            Is this isosceles?
+        </button>
+        <p id="is-iso"></p>
+          <!-- <button type="button" onclick="trHieght()">
+            Whats the height?
+        </button>
+        <p id="iso-height"></p> -->
+    </form>
+</section>
+
+<section class="card">
+    <h2 class="card_title">Area and perimeter of a circle</h2>
+    <form class="card_form" action="">
+        <label for="crInput">Circle diameter</label>
+        <br>
+        <input id="crInput" type="number"/>
+       <br>
+        <button type="button" onclick="crPerimeter()">
+            Obtain perimeter
+        </button>
+        <br>
+        <button type="button" onclick="crArea()">
+            Obtain area
+        </button>
+    </form>
+</section>
+
+
+
+        <script src="./figures.js"></script>
+    </body>
+</html>
